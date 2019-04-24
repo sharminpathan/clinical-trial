@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.1.2" label="output_report" createdLocale="en" createdVersion="4.1.2" dateCreated="2019-03-28T22:10:54Z" dateModified="2019-03-28T22:15:54Z" createdApplication="SAS Visual Analytics 8.3.1" lastModifiedApplication="SAS Visual Analytics 8.3.1" nextUniqueNameIndex="209">
+	<DataDefinitions>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds142" name="dd200">
+			<BusinessItems>
+				<RelationalDataItem name="bi203" base="bi143"/>
+				<RelationalDataItem name="bi204" base="bi150"/>
+				<RelationalDataItem name="bi205" base="bi151"/>
+				<RelationalDataItem name="bi206" base="bi152"/>
+				<RelationalDataItem name="bi207" base="bi153"/>
+				<RelationalDataItem name="bi208" base="bi154"/>
+			</BusinessItems>
+			<DataDefinition dataSource="ds142" type="relational" name="dd201">
+				<RelationalQuery detail="false">
+					<Axes>
+						<Axis type="column">
+							<BusinessItem ref="bi203"/>
+							<BusinessItem ref="bi204"/>
+							<BusinessItem ref="bi205"/>
+							<BusinessItem ref="bi206"/>
+							<BusinessItem ref="bi207"/>
+							<BusinessItem ref="bi208"/>
+						</Axis>
+					</Axes>
+					<SortItems>
+						<SortItem ref="bi203" sortDirection="ascending"/>
+					</SortItems>
+				</RelationalQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" maxRows="40000" maxRowsLookup="listTable" maxRowsBehavior="truncate" name="dd202"/>
+				</ResultDefinitions>
+			</DataDefinition>
+		</ParentDataDefinition>
+	</DataDefinitions>
+	<DataSources>
+		<DataSource label="TEST_SCORED" type="relational" name="ds142">
+			<CasResource server="cas-shared-default" library="CASUSER(shpath)" table="TEST_SCORED" locale="en_US"/>
+			<BusinessItemFolder>
+				<DataItem name="bi143" xref="Horizon"/>
+				<DataItem name="bi144" xref="NumEnrolled"/>
+				<DataItem name="bi145" xref="Site10Capacity"/>
+				<DataItem name="bi146" xref="Site10IDDelay"/>
+				<DataItem name="bi147" xref="Site10Interarrival"/>
+				<DataItem name="bi148" xref="Site10ScreenFailP"/>
+				<DataItem name="bi149" xref="Site10StartUpDelay"/>
+				<DataItem name="bi150" xref="Site1Capacity"/>
+				<DataItem name="bi151" xref="Site1IDDelay"/>
+				<DataItem name="bi152" xref="Site1Interarrival"/>
+				<DataItem name="bi153" xref="Site1ScreenFailP"/>
+				<DataItem name="bi154" xref="Site1StartUpDelay"/>
+				<DataItem name="bi155" xref="Site2Capacity"/>
+				<DataItem name="bi156" xref="Site2IDDelay"/>
+				<DataItem name="bi157" xref="Site2Interarrival"/>
+				<DataItem name="bi158" xref="Site2ScreenFailP"/>
+				<DataItem name="bi159" xref="Site2StartUpDelay"/>
+				<DataItem name="bi160" xref="Site3Capacity"/>
+				<DataItem name="bi161" xref="Site3IDDelay"/>
+				<DataItem name="bi162" xref="Site3Interarrival"/>
+				<DataItem name="bi163" xref="Site3ScreenFailP"/>
+				<DataItem name="bi164" xref="Site3StartUpDelay"/>
+				<DataItem name="bi165" xref="Site4Capacity"/>
+				<DataItem name="bi166" xref="Site4IDDelay"/>
+				<DataItem name="bi167" xref="Site4Interarrival"/>
+				<DataItem name="bi168" xref="Site4ScreenFailP"/>
+				<DataItem name="bi169" xref="Site4StartUpDelay"/>
+				<DataItem name="bi170" xref="Site5Capacity"/>
+				<DataItem name="bi171" xref="Site5IDDelay"/>
+				<DataItem name="bi172" xref="Site5Interarrival"/>
+				<DataItem name="bi173" xref="Site5ScreenFailP"/>
+				<DataItem name="bi174" xref="Site5StartUpDelay"/>
+				<DataItem name="bi175" xref="Site6Capacity"/>
+				<DataItem name="bi176" xref="Site6IDDelay"/>
+				<DataItem name="bi177" xref="Site6Interarrival"/>
+				<DataItem name="bi178" xref="Site6ScreenFailP"/>
+				<DataItem name="bi179" xref="Site6StartUpDelay"/>
+				<DataItem name="bi180" xref="Site7Capacity"/>
+				<DataItem name="bi181" xref="Site7IDDelay"/>
+				<DataItem name="bi182" xref="Site7Interarrival"/>
+				<DataItem name="bi183" xref="Site7ScreenFailP"/>
+				<DataItem name="bi184" xref="Site7StartUpDelay"/>
+				<DataItem name="bi185" xref="Site8Capacity"/>
+				<DataItem name="bi186" xref="Site8IDDelay"/>
+				<DataItem name="bi187" xref="Site8Interarrival"/>
+				<DataItem name="bi188" xref="Site8ScreenFailP"/>
+				<DataItem name="bi189" xref="Site8StartUpDelay"/>
+				<DataItem name="bi190" xref="Site9Capacity"/>
+				<DataItem name="bi191" xref="Site9IDDelay"/>
+				<DataItem name="bi192" xref="Site9Interarrival"/>
+				<DataItem name="bi193" xref="Site9ScreenFailP"/>
+				<DataItem name="bi194" xref="Site9StartUpDelay"/>
+				<DataItem name="bi195" xref="StartUpDelay"/>
+				<PredefinedDataItem calculation="totalCount" name="bi196" label="Frequency" usage="quantitative" format="COMMA12."/>
+				<PredefinedDataItem calculation="totalCountPercent" name="bi197" label="Frequency Percent" usage="quantitative" format="PERCENT20.2"/>
+			</BusinessItemFolder>
+		</DataSource>
+	</DataSources>
+	<VisualElements>
+		<Table columnSizing="autoFill" resultDefinitions="dd202" name="ve199" data="dd200" label="List Table - Horizon 1" applyDynamicBrushes="yes">
+			<EditorProperties>
+				<Property key="isAutoLabel">true</Property>
+			</EditorProperties>
+			<Columns>
+				<Column variable="bi203" isVisible="true" compactFormat="false"/>
+				<Column variable="bi204" isVisible="true" compactFormat="false"/>
+				<Column variable="bi205" isVisible="true" compactFormat="false"/>
+				<Column variable="bi206" isVisible="true" compactFormat="false"/>
+				<Column variable="bi207" isVisible="true" compactFormat="false"/>
+				<Column variable="bi208" isVisible="true" compactFormat="false"/>
+			</Columns>
+		</Table>
+	</VisualElements>
+	<View>
+		<Section name="vi6" label="Page 1">
+			<Body>
+				<MediaContainer target="mt2">
+					<ResponsiveLayout orientation="vertical" overflow="fit">
+						<Weights mediaTarget="mt5" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt4" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt3" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+					</ResponsiveLayout>
+					<Visual ref="ve199" name="vi198">
+						<ResponsiveConstraint>
+							<WidthConstraint>
+								<Width mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+							</WidthConstraint>
+							<HeightConstraint>
+								<Height mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+							</HeightConstraint>
+						</ResponsiveConstraint>
+					</Visual>
+				</MediaContainer>
+			</Body>
+		</Section>
+	</View>
+	<MediaSchemes>
+		<MediaScheme name="ms1">
+			<BaseStylesheetResource file="basems1.css" theme="marine"/>
+			<Stylesheet><![CDATA[]]></Stylesheet>
+		</MediaScheme>
+	</MediaSchemes>
+	<MediaTargets>
+		<MediaTarget windowSize="default" scheme="ms1" name="mt2"/>
+		<MediaTarget windowSize="small" scheme="ms1" name="mt3"/>
+		<MediaTarget windowSize="medium" scheme="ms1" name="mt4"/>
+		<MediaTarget windowSize="large" scheme="ms1" name="mt5"/>
+	</MediaTargets>
+	<Properties>
+		<Property key="lastSection">vi6</Property>
+		<Property key="displayDataSource">ds142</Property>
+		<Property key="ReportPackagesServiceVersion">SAS Report Packages Service 8.3</Property>
+		<Property key="ReportDataServiceVersion">SAS Report Data Service 8.3</Property>
+	</Properties>
+	<ExportProperties>
+		<Export destination="pdf">
+			<Property key="showCoverPage" value="true"></Property>
+			<Property key="showPageNumbers" value="true"></Property>
+		</Export>
+	</ExportProperties>
+	<History>
+		<Versions>
+			<Version key="4.1.2"/>
+		</Versions>
+	</History>
+	<SASReportState>
+		<View/>
+	</SASReportState>
+</SASReport>
