@@ -13,5 +13,17 @@ SAS® Clinical Trial Enrollment Simulator is a strategic decision-support tool t
 
 Furthermore, combined use of simulation, machine learning, and optimization creates the option to deploy enrollment simulations in real-time analytical portals. A shallow neural net built on SAS Viya is used to make predictions for the enrollment.
 
+### Steps to use the tool:
+1.	Install Node.js and Node Package Manager (npm)
+2.	Clone this repository
+3.	Navigate to the directory 
+4.	Install the node modules: 
+npm install
+5.	Issue the following commands to build and start the app:
+npm run build
+node app app.env
+6.	Visit http://localhost:5000/ctres to view the app.
+
+
 
 
