@@ -26,4 +26,7 @@ node app app.env
 
 
 
+Paper SAS3528-2019:
+Time Travel into the Future of Clinical Trial Enrollment Design
 
+Authors: Bahar Biller, Anup Mokashi, Ivan Oliveira, Sharmin Pathan, Jinxin Yi, and Jim Box, SAS Institute Inc., Cary, NC
